@@ -20,6 +20,15 @@
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
 </properties>
+	<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-war-plugin</artifactId>
+	<configuration>
+		<!-- Set WebContent directory as Web directory -->
+		<webappDirectory>WebContent</webappDirectory>
+		<warSourceDirectory>WebContent</warSourceDirectory>
+	</configuration>
+</plugin>
   <build>
     <finalName>car-rentals</finalName>
   </build>
